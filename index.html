@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fluent-plugin-unique-counter by aiming</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/aiming/fluent-plugin-unique-counter">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/aiming/fluent-plugin-unique-counter/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/aiming/fluent-plugin-unique-counter/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Fluent-plugin-unique-counter</h1>
+          <p>fluent unique counter plugin</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/aiming">aiming</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="fluent-unique-counter-plugin-" class="anchor" href="#fluent-unique-counter-plugin-"><span class="octicon octicon-link"></span></a>Fluent unique counter plugin <a href="https://travis-ci.org/aiming/fluent-plugin-unique-counter"><img src="https://travis-ci.org/aiming/fluent-plugin-unique-counter.png?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>This plugin purpose is simple monitoring (countup only).
+This was referred from <a href="https://github.com/tagomoris/fluent-plugin-numeric-counter">fluent-plugin-numeric-counter</a>. Thanks! :)</p>
+
+<h1>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h1>
+
+<ul>
+<li><a href="https://github.com/takesato">@takesato</a></li>
+<li><a href="https://github.com/futoase">@futoase</a></li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'fluent-plugin-unique-counter'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install fluent-plugin-unique-counter
+</code></pre>
+
+<h2>
+<a name="confing-params" class="anchor" href="#confing-params"><span class="octicon octicon-link"></span></a>confing params</h2>
+
+<ul>
+<li>
+<p>count_interval</p>
+
+<p>This interval time to monitoring. Default setting is <code>60sec</code>.</p>
+</li>
+<li>
+<p>unit</p>
+
+<p>Monitoring specific interval an unit. Selectable setting is <code>minutes</code>, <code>hours</code> and <code>days</code>.</p>
+</li>
+<li>
+<p>unique_key</p>
+
+<p>Monitoring key name.</p>
+</li>
+<li>
+<p>tag</p>
+
+<p>Output tag name. Default setting is <code>unique_count</code>.</p>
+</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Apache License v2.0.</p>
+
+<h2>
+<a name="copylight" class="anchor" href="#copylight"><span class="octicon octicon-link"></span></a>Copylight</h2>
+
+<p>Copylight (c) 2013 Aiming Inc.</p>
+
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/aiming/fluent-plugin-unique-counter/trend.png" alt="Bitdeli Badge"></a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
