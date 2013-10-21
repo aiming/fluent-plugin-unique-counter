@@ -24,19 +24,19 @@ Or install it yourself as:
 
 ## confing params
 
-- ```count_interval```
+- count_interval
 
   This interval time to monitoring. Default setting is ```60sec```.
 
-- ```unit```
+- unit
 
   Monitoring specific interval an unit. Selectable setting is ```minutes```, ```hours``` and ```days```.
 
-- ```unique_key```
+- unique_key
 
   Monitoring key name.
 
-- ```tag```
+- tag
 
   Output tag name. Default setting is ```unique_count```.
 
