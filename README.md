@@ -1,4 +1,4 @@
-# Fluent unique counter plugin
+# Fluent unique counter plugin [![Build Status](https://travis-ci.org/aiming/fluent-plugin-unique-counter.png?branch=master)](https://travis-ci.org/aiming/fluent-plugin-unique-counter)
 
 This plugin purpose is simple monitoring (countup only).
 This was referred from [fluent-plugin-numeric-counter](https://github.com/tagomoris/fluent-plugin-numeric-counter). Thanks! :)
