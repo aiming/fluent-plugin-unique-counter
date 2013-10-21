@@ -70,6 +70,45 @@ This was referred from <a href="https://github.com/tagomoris/fluent-plugin-numer
 </code></pre>
 
 <h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<ul>
+<li>create fluentd config file</li>
+</ul><pre><code>&lt;source&gt;
+  type forward
+  port 24224
+&lt;/source&gt;
+
+&lt;match test.api.*&gt;
+  type unique_counter
+  tag count.up
+  unique_key user_id
+  unit minutes
+&lt;/match&gt;
+
+&lt;match count.up&gt;
+  type file
+  path fluent/count-up.log
+&lt;/match&gt;
+</code></pre>
+
+<ul>
+<li>send test data</li>
+</ul><pre><code>echo '{"user_id": 1000}' | fluent-cat test.api.uga
+echo '{"user_id": 1000}' | fluent-cat test.api.uga
+echo '{"user_id": 1000}' | fluent-cat test.api.uga
+echo '{"user_id": 1002}' | fluent-cat test.api.uga
+echo '{"user_id": 1002}' | fluent-cat test.api.uga
+echo '{"user_id": 1003}' | fluent-cat test.api.uga
+echo '{"user_id": 1003}' | fluent-cat test.api.uga
+</code></pre>
+
+<ul>
+<li>result (count-up.log)</li>
+</ul><pre><code>2013-10-21T22:07:08+09:00       count.up        {"unique_count":3}
+</code></pre>
+
+<h2>
 <a name="confing-params" class="anchor" href="#confing-params"><span class="octicon octicon-link"></span></a>confing params</h2>
 
 <ul>
