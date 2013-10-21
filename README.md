@@ -47,3 +47,7 @@ Apache License v2.0.
 ## Copylight
 
 Copylight (c) 2013 Aiming Inc.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aiming/fluent-plugin-unique-counter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
