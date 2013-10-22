@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-unique-counter"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Keiji Matsuzaki"]
   spec.email         = ["futoase@gmail.com"]
   spec.summary       = %q{fluentd unique counter plugin.}
   spec.description   = %q{This plugin is use of count up to unique attribute.}
-  spec.homepage      = ""
+  spec.homepage      = "http://aiming.github.io/fluent-plugin-unique-counter/"
   spec.license       = "Apache License v2.0"
 
   spec.files         = `git ls-files`.split($/)
