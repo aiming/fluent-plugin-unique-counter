@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-class Fluent::UniqCounterOutput < Fluent::Output
+class Fluent::UniqueCounterOutput < Fluent::Output
   Fluent::Plugin.register_output('unique_counter', self)
 
   config_param :count_interval, :time, :default => 60
