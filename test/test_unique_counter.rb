@@ -41,7 +41,7 @@ class OutUniqueCounterTest < Test::Unit::TestCase
   ]
 
   def create_driver(conf = CONFIG, tag = 'test')
-    Fluent::Test::OutputTestDriver.new(Fluent::UniqCounterOutput, tag).configure(conf)
+    Fluent::Test::OutputTestDriver.new(Fluent::UniqueCounterOutput, tag).configure(conf)
   end
 
   def test_unique_count_interval_10
