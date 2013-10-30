@@ -63,7 +63,7 @@ echo '{"user_id": 1003}' | fluent-cat test.api.uga
 2013-10-21T22:07:08+09:00       count.up        {"unique_count":3}
 ```
 
-## confing params
+## config params
 
 - count_interval
 
