@@ -88,9 +88,9 @@ echo '{"user_id": 1003}' | fluent-cat test.api.uga
 
 Apache License v2.0.
 
-## Copylight
+## Copyright
 
-Copylight (c) 2013 Aiming Inc.
+Copyright (c) 2013 Aiming Inc.
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aiming/fluent-plugin-unique-counter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
