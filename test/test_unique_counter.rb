@@ -10,6 +10,12 @@ class OutUniqueCounterTest < Test::Unit::TestCase
     Timecop.return
   end
 
+  CONFIG_ERROR = %[
+    tag api.production.login
+    unique_key user_id
+    unit years
+  ]
+
   CONFIG_INTERVAL_10 = %[
     tag api.production.login
     unique_key user_id
@@ -42,6 +48,12 @@ class OutUniqueCounterTest < Test::Unit::TestCase
 
   def create_driver(conf = CONFIG, tag = 'test')
     Fluent::Test::OutputTestDriver.new(Fluent::UniqueCounterOutput, tag).configure(conf)
+  end
+
+  def test_config_error
+    assert_raise Fluent::ConfigError do
+      d1 = create_driver(CONFIG_ERROR, 'uniq.countup')
+    end
   end
 
   def test_unique_count_interval_10
