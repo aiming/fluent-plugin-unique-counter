@@ -1,4 +1,4 @@
-# Fluent unique counter plugin 
+# [Fluentd](http://fluentd.org) unique counter plugin 
 
 [![Build Status](https://travis-ci.org/aiming/fluent-plugin-unique-counter.png?branch=master)](https://travis-ci.org/aiming/fluent-plugin-unique-counter)
 [![Gem Version](https://badge.fury.io/rb/fluent-plugin-unique-counter.png)](http://badge.fury.io/rb/fluent-plugin-unique-counter)
