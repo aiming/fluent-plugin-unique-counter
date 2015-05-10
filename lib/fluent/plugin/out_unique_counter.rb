@@ -3,6 +3,11 @@
 class Fluent::UniqueCounterOutput < Fluent::Output
   Fluent::Plugin.register_output('unique_counter', self)
 
+  # Define `router` method of v0.12 to support v0.10 or earlier
+  unless method_defined?(:router)
+    define_method("router") { Fluent::Engine }
+  end
+
   config_param :count_interval, :time, :default => 60
   config_param :unit, :string, :default => nil
   config_param :unique_key, :string
@@ -45,7 +50,7 @@ class Fluent::UniqueCounterOutput < Fluent::Output
   def flush_emit
     flushed,@counts = @counts,[]
     message = {'unique_count' => flushed.uniq.count }
-    Fluent::Engine.emit(@tag, Fluent::Engine.now, message)
+    router.emit(@tag, Fluent::Engine.now, message)
   end
 
   def start_watch
