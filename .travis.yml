@@ -1,4 +1,11 @@
 language: ruby
 
-rvm: 
+rvm:
   - 2.0.0
+  - 2.1.6
+  - 2.2.2
+
+env:
+  - fluentd_version=""
+  - fluentd_version="< 0.10.58" # versions without router method
+
